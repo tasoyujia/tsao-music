@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+.wet{
+  background: #FCFCFC;
+}
+.menu{
+  width:1100px;
+  margin:0 auto;
+  display:flex;
+  margin-bottom:20px;
+ }
+.menu li{
+  display:block;
+  width:220px;
+  text-align:center;
+  border:1px black solid;
+ background:#E8FFF5;
+ border-radius: 10px 10px 10px 10px;
+
+}
+.menu li a{
+  display:block;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-decoration:none;
+  color:black;
+}
+.menu li :hover{
+  background:#01005988;
+  border-radius: 10px 10px 10px 10px;
+  color:white;
+}
+.save{
+  
+    text-align: right;
+    font-size: 20px;
+    padding-right:20px;
+}
+.online{
+   font-size: 20px;
+}
+.online a{
+   text-decoration: none;
+}   
+.cd{
+  background: white;
+}
+.back{
+  background:;
+}
+.back img{
+	height: 300px;
+	width: 2000px;
+}
+.container{
+  margin:0 auto;
+  background:;
+}
+.title{
+  font-size:40px;
+}
+.s{
+  padding-left:20px;
+}
+.light-table-filter{
+  height:35px;
+  width:675px;
+  margin-bottom:20px;
+}
+
+.button{
+  text-align:right;
+  font-size:20px;
+  padding-right:20px;
+  
+}
+.button a{
+   text-decoration:none;
+  font-size:20px;
+  color:red;
+}
+.btn{
+  
+  line-height:;
+}
+
+.a{
+    text-decoration:none;
+}
+.b{
+  background:#00ffff;
+}
+.tr b  m :hover{
+  background:#01005988;
+  color:white;
+}
+.footer{
+  background:#696969;
+  color:#E6E6FA;
+  padding:25px;
+}
+	</style>
+	<script type="text/javascript">
+		(function(document) {
+	'use strict';
+
+	var LightTableFilter = (function(Arr) {
+
+		var _input;
+
+		function _onInputEvent(e) {
+			_input = e.target;
+			var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+			Arr.forEach.call(tables, function(table) {
+				Arr.forEach.call(table.tBodies, function(tbody) {
+					Arr.forEach.call(tbody.rows, _filter);
+				});
+			});
+		}
+
+		function _filter(row) {
+			var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+			row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+		}
+
+		return {
+			init: function() {
+				var inputs = document.getElementsByClassName('light-table-filter');
+				Arr.forEach.call(inputs, function(input) {
+					input.oninput = _onInputEvent;
+				});
+			}
+		};
+	})(Array.prototype);
+
+	document.addEventListener('readystatechange', function() {
+		if (document.readyState === 'complete') {
+			LightTableFilter.init();
+		}
+	});
+
+})(document);
+
+	</script>
+</head>
+<body class="wet">
+ <div class="back">
+<section class="container" >
+  <div class="back"><img src="img/316285.jpg"></div>
+
+  <p class="button"><strong><a href="#">登錄/註冊</a></strong></p>
+  <p class="save"><strong>❤收藏</strong></p>
+  <p class="online"><strong><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E9%A6%96%E9%A0%81.html">首頁</a>>
+    <a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E6%90%9C%E5%B0%8B.html">搜尋</a>>搜尋結果</strong></p>
+<strong><ul class="menu">
+  <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E9%A6%96%E9%A0%81.html"><font size="6px">首頁</font></a></li>
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E6%AD%8C%E6%9B%B2.html"><font size="6px">音樂</font></a></li>
+   
+    <li><a href="#"><font size="6px">聯絡我們</font></a></li>
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E5%95%8F%E8%88%87%E7%AD%94.html"><font size="6px">問與答</font></a></li>
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E6%90%9C%E5%B0%8B.html"><font  size="6px">🔍 搜尋</font></a></li>
+  
+      </ul>
+ 
+  <h class="s"><font size="5px"><strong>搜尋:</strong></h><input type="search" class="light-table-filter" data-table="order-table" placeholder="找音樂"> <strong>可搜尋歌曲、歌手、專輯和歌詞(中、英、日)</font>
+
+
+<table class="order-table table"  tabel border ="1">
+		<thead>
+			<tr class="b">
+				<th>歌名</th>
+				<th>歌手</th>
+				<th>專輯</th>
+				<th>歌詞</th>
+			</tr>
+		</thead>
+		<tbody class="cd">
+			<tr>
+        <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E9%9B%A8%E5%A4%9C%E8%8A%B1.html" class="a">雨夜花</a></b></td>
+        <td align="center" ><a href="https://codepen.io/riknecxa/pen/bGobRKb" class="a">鄧麗君</a></td>
+				<td align="center">鄧麗君金曲選Vol.11</td>
+				<td>雨夜花　雨夜花　受風雨吹落地
+            無人看見每日怨嗟　花謝落土不再回<br>
+            雨無情　雨無情　無想阮的前程<br>
+            並無看顧軟弱心性　乎阮前途失光明
+            雨水滴　雨水滴　引阮入受難池<br>
+            怎樣乎阮離葉離枝　永遠無人通看見
+           更多更詳盡歌詞 在  花落土　花落土　有誰人通看顧<br>
+            無情風雨誤阮前途　花蕊若落要如何
+            雨夜花　雨夜花　受風雨吹落地<br>
+            無人看見每日怨嗟　花謝落土不再回
+            雨無情　雨無情　無想阮的前程
+          並無看顧軟弱心性　乎阮前途失光明<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E9%9B%A8%E5%A4%9C%E8%8A%B1.html" class="a"><strong>(查看更多)</a></td>
+			</tr>
+			<tr>
+        <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E8%8A%B1%E9%9B%A8%E5%A4%9C.html" class="a">花雨夜</a></b></td>
+        <td align="center"><a href="" class="a">張清芳</a></td>
+				<td align="center">張清芳 25th 那些你最喜歡的歌</td>
+				<td>昨夜夢裡　有個地方　紅葉森林的牧場
+　　         隱約聽見　有人吹著　一首歌叫雨夜花<br>
+　　         已經忘了　這首歌　它到底在說些什麼
+　　         雨很美　夜很涼　花很香<br>
+
+             那是樹林裡花兒紛飛　那是樹林裡花兒紛飛
+
+             山風溪水　篝篝炊煙　熱湯木桌　缺了誰<br>
+             鳥叫蟲鳴　鶯聲燕語　何苦惹是是非非
+             山風溪水　篝篝炊煙　熱湯木桌　別喝醉
+             就算醉　有了我　會更陶醉<br>
+
+你說我太傻　人生本匆忙　花兒身上插　揮揮衣袖吧
+更多更詳盡歌詞 在我不想要歷盡滄桑　陶醉夢裡　緊抓不放　陪我好嗎<br>
+
+  山風溪水　篝篝炊煙　熱湯木桌　缺了誰<br>
+　不要笑我　夢得太美　夢裡等著你來陪
+　山風溪水　篝篝炊煙　熱湯木桌　別喝醉<br>
+　就算醉　有了我　會更陶醉<br>
+
+  昨夜夢裡　有個地方　紅葉森林的牧場
+　隱約聽見　有人吹著　一首歌叫雨夜花<br>
+　雨夜花　花雨夜　夜裡花兒繽紛墜<br>
+　多麼涼　多麼香　多麼美
+<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E8%8A%B1%E9%9B%A8%E5%A4%9C.html" class="a"><strong>(查看更多)</a></td>
+			</tr>
+			<tr>
+        <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E5%86%B7%E9%9B%A8%E5%A4%9C.html" class="a">冷雨夜</a></b></td>
+        <td align="center"><a href="" class="a">Beyond</a></td>
+				<td align="center">Beyond87-91' 32精選 </td>
+				<td>在雨中漫步
+藍色街燈漸露
+相對望
+無聲緊擁抱著
+為了找往日
+尋溫馨的往日
+消失了
+任雨灑我面<br>
+難分水點淚痕
+心更亂
+愁絲繞千百段
+驟變的態度
+無心傷她說話<br>
+收不了
+冷雨夜我在你身邊
+盼望你會知
+可知道我的心
+比當初已改變
+只牽強地相處<br>
+冷雨夜我不想歸家
+怕望你背影
+只苦笑望雨點
+須知要說清楚
+可惜我沒膽試<br>
+在雨中漫步
+嘗水中的味道
+仿似是
+更多更詳盡歌詞 在<br>
+情此刻的盡時
+未瞭解結合
+留低思憶片段
+不經意
+冷雨夜我在你身邊<br>
+盼望你會知
+可知道我的心
+比當初已改變
+只牽強地相處
+冷雨夜我不想歸家<br>
+怕望你背影
+只苦笑望雨點
+須知要說清楚
+可惜我沒膽試<br>
+( MUSIC )
+冷雨夜我在你身邊
+盼望你會知
+可知道我的心
+比當初已改變
+只牽強地相處<br>
+冷雨夜我不想歸家
+怕望你背影
+只苦笑望雨點<br>
+須知要說清楚
+可惜我沒膽試
+喔......<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E5%86%B7%E9%9B%A8%E5%A4%9C.html" class="a"><strong>(查看更多)</a></td>
+			</tr>
+      <tr>
+        <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/It's%20My%20Life.html" class="a">It's My Life</a></b></td>
+        <td align="center"><a href="" class="a">Bon Jovi</a></td>
+        <td align="center">Bon Jovi Crush</td>
+        <td>This ain't a song for the broken-hearted,<br>
+No silent prayer for the faith-departed,
+I ain't gonna be just a face in the crowd,<br>
+You're gonna hear my voice,<br>
+When I shout it out loud,
+
+Chorus:
+It's my life,
+It's now or never,<br>
+I ain't gonna live forever,<br>
+I just want to live while I'm alive,
+(It's my life)
+My heart is like an open highway,<br>
+Like Frankie said,<br>
+I did it my way,
+I just wanna live while I'm alive,
+It's my life,<br>
+
+This is for the ones who stood their ground,<br>
+For Tommy and Gina who never backed down,
+Tomorrow's getting harder make no mistake,<br>
+Luck ain't even lucky,
+Got to make your own breaks,<br>
+
+Chorus:
+It's my life,<br>
+And it's now or never,<br>
+I ain't gonna live forever,
+I just want to live while I'm alive,<br>
+(It's my life)
+My heart is like an open highway,<br>
+Like Frankie said,
+I did it my way,<br>
+I just want to live while I'm alive,<br>
+'Cause it's my life,
+
+Better stand tall when they're calling you out,<br>
+Don't bend, don't break, baby, don't back down,
+
+Chorus:
+It's my life,
+And it's now or never,<br>
+'Cause I ain't gonna live forever,<br>
+I just want to live while I'm alive,
+(It's my life)
+My heart is like an open highway,<br>
+Like Frankie said,
+I did it my way,<br>
+I just want to live while I'm alive,
+
+Chorus:
+It's my life,<br>
+And it's now or never,<br>
+'Cause I ain't gonna live forever,
+I just want to live while I'm alive,<br>
+(It's my life)
+My heart is like an open highway,<br>
+Like Frankie said,
+I did it my way,
+I just want to live while I'm alive,<br>
+'Cause it's my life!<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/It's%20My%20Life.html" class="a"><strong>(查看更多)</a></td>
+      <tr/>
+       <tr>
+         <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/for%20life.html" class="a">For Life</a></b></td>
+         <td align="center"><a href="" class="a">EXO</a></td>
+        <td align="center">EXO PLANET #4 –The EℓyXiOn [dot]– Live Album</td>
+        <td>This life has twists and turns
+But it's the sweetest mystery
+When you're with me
+We say a thousand words
+When no one else is listening<br>
+I believe
+Every night and every day
+No matter what may come our way
+We're in this thing together
+The dark turns to light<br>
+We both come alive tonight
+I'm talking 'bout forever
+Never gonna let you go
+Giving you my heart and soul
+I'll be right here<br>
+with you for life
+Baby all I wanna do
+Is spend my every second with you
+So look in my eyes
+I'll be by your side<br>
+Though storms may come
+and winds may blow
+I'll be your shelter for life<br>
+This love<br>
+This love<br>
+I mean it till the day I die
+Oh Never gonna let you go
+Giving you my heart and soul
+I'll be right here
+with you for life<br>
+Baby all I wanna do
+Is spend my every second with you
+So look in my eyes
+I'll be by your side
+Yeah look in my eyes<br>
+I'll be by your side
+For life<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/for%20life.html"class="a"><strong>(查看更多)</a></td>
+      <tr/>
+       <tr>
+         <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/All%20My%20Life.html" class="a">All My Life</a></b></td>
+         <td align="center"><a href="" class="a">K ci jojo</a></td>
+        <td align="center">星夜芭莎 / 西洋流行精選</td>
+        <td>I will never find another lover sweeter than you,
+Sweeter than you,
+And I will never find another lover more precious than you<br>
+More precious than you,
+Girl you are close to me you're like my mother,
+Close to me you're like my father,<br>
+Close to me you're like my sister,<br>
+Close to me you're like my brother,<br>
+You are the only one my everything and for you this song I sing<br>
+
+And all my life I've prayed for someone like you,
+And I thank God that I, that I finally found you,
+All my life I've prayed for someone like you,<br>
+And I hope that you feel the same way too,
+Yes, I pray that you do love me too<br>
+
+I said you're all that I'm thinking of.....baby<br>
+
+Said, I promise to never fall in love with a stranger,
+You're all I'm thinking of, I praise the Lord above,
+For sending me your love, I cherish every hug,
+I really love you<br>
+
+And all my life, baby, baby, I've prayed for someone like you,
+And I thank God that I, that I finally found you, baby
+All my life I've prayed for someone like you,<br>
+And I hope that you feel the same way too
+Yes, I pray that you do, love me<br>
+
+You're all that I ever known, when you smile, on my face, all I see is a glow.
+You turned my life around, you picked me up when I was down,<br>
+You're all that I ever known, when you smile on your face all I see is a glow,
+You picked me up when I was down
+You're all that I ever known, when you smile on your face all I see is a glow,<br>
+You picked me up when I was down and I hope that you feel the same way too,
+Yes I pray that you do love me too<br>
+
+All my life, I've prayed for someone like you,
+And I thank God that I, that I finally found you,
+All my life I've prayed for someone like you,<br>
+Yes, I pray that you do love me too,
+All my life I've prayed for someone like you<br>
+And I thank God that I, that I finally found you,
+All my life I've prayed for someone like you,<br>
+Yes, I pray that you do love me too<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/All%20My%20Life.html" class="a"><strong>(查看更多)</a></td>
+      <tr/>
+       <tr>
+         <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E3%83%94%E3%83%BC%E3%82%B9%E3%82%B5%E3%82%A4%E3%83%B3.html" class="a">ピースサイン</a></b></td>
+         <td align="center"><a href="" class="a">米津玄師</a></td>
+        <td align="center">ピースサイン (Peace Sign)</td>
+        <td>いつか僕らの上をスレスレに
+通りすぎていったあの飛行機を
+不思議なくらいに憶えてる
+意味もないのに なぜか
+不甲斐なくて泣いた日の夜に
+ただ強くなりたいと願ってた<br>
+そのために必要な勇気を 探し求めていた
+残酷な運命が定まっているとして
+それがいつの日か僕の前に現れるとして
+ただ一瞬 この一瞬 息ができるなら
+どうでもいいと思えた その心を
+もう一度 遠くへ行け 遠くへ行けと<br>
+僕の中で誰かが歌う
+どうしようもないほど熱烈に
+いつだって目を腫らした君が二度と
+悲しまないように笑える
+そんなヒーローになるための歌
+さらば掲げろ ピースサイン<br>
+転がっていくストーリーを
+「守りたい」だなんて言えるほど
+君が弱くはないの分かってた
+それ以上に僕は弱くてさ
+君が大事だったんだ<br>
+「独りで生きていくんだ」なんてさ
+口をついて叫んだあの日から
+変わっていく僕を笑えばいい
+独りが怖い僕を
+蹴飛ばして 噛み付いて
+息もできなくて
+騒ぐ頭と 腹の奥が<br>
+ぐしゃぐしゃになったって
+衒いも外連も消えてしまうくらいに
+今は触っていたいんだ 君の心に
+僕たちはきっといつか
+遠く離れた太陽にすら手が届いて
+夜明け前を手に入れて笑おう
+そうやって青く燃える色に染まり<br>
+おぼろげな街の向こうへ
+手をつないで走っていけるはずだ
+君と未来を盗み描く
+捻りのないストーリーを
+カサブタだらけ荒くれた日々が
+削り削られ 擦切れた今が
+君の言葉で蘇る<br>
+鮮やかにも 現れてく
+蛹のままで 眠る魂も
+食べかけのまま 捨てたあの夢を
+もう一度 取り戻せ
+もう一度 遠くへ行け 遠くへ行けと
+僕の中で誰かが歌う<br>
+どうしようもないほど熱烈に
+いつだって目を腫らした君が二度と
+悲しまないように笑える
+そんなヒーローになるための歌<br>
+さらば掲げろ ピースサイン
+転がっていくストーリーを
+君と未来を盗み描く
+捻りのないストーリーを<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E3%83%94%E3%83%BC%E3%82%B9%E3%82%B5%E3%82%A4%E3%83%B3.html" class="a"><strong>(查看更多)</a><br></td>
+      <tr/>
+         <tr>
+           <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E3%83%8F%E3%83%83%E3%83%94%E3%83%BC%E3%82%A8%E3%83%B3%E3%83%89.html" class="a">ハッピーエンド</a></b> </td>
+           <td align="center"><a href="" class="a">back number</a></td>
+        <td align="center">ハッピーエンド</td>
+        <td>さよならが喉の奧につっかえてしまって
+咳をするみたいにありがとうって言ったの
+次の言葉はどこかとポケットを探しても
+見つかるのはあなたを好きな私だけ
+
+平気よ大丈夫だよ優しくなれたと思って
+願いに変わって最後は噓になって<br>
+
+青いまま枯れてゆく
+あなたを好きなままで消えてゆく
+私みたいと手に取って
+奧にあった想いと一緒に握り潰したの
+大丈夫　大丈夫<br>
+
+今すぐに抱きしめて
+私がいれば何もいらないと
+それだけ言ってキスをして
+なんてね　噓だよ　ごめんね<br>
+
+こんな時思い出す事じゃないとは思うんだけど
+一人にしないよってあれ実は嬉しかったよ
+あなたが勇気を出して初めて電話をくれた
+あの夜の私と何が違うんだろう<br>
+
+どれだけ離れていてもどんなに會えなくても
+
+気持ちが変わらないからここにいるのに<br>
+
+青いまま枯れてゆく
+あなたを好きなままで消えてゆく
+私をずっと覚えていて
+なんてね　噓だよ　元気でいてね<br>
+
+泣かない私に少しほっとした顏のあなた
+相変わらず暢気ね　そこも大好きよ<br>
+
+気が付けば橫にいて
+別に君のままでいいのになんて
+勝手に涙拭いたくせに
+見える全部聴こえる全て
+色付けたくせに<br>
+
+青いまま枯れてゆく
+あなたを好きなままで消えてゆく
+私みたいと手に取って
+奧にあった想いと一緒に握り潰したの
+大丈夫　大丈夫<br>
+
+今すぐに抱きしめて
+私がいれば何もいらないと
+そう言ってもう離さないで
+なんてね　噓だよ　さよなら<a href="hfile:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E3%83%8F%E3%83%83%E3%83%94%E3%83%BC%E3%82%A8%E3%83%B3%E3%83%89.html"class="a"><strong>(查看更多)</a><br></td>
+      <tr/>
+         <tr>
+           <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E4%B8%8D%E8%A6%8F%E5%89%87%E6%80%A7%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AD%E3%83%94%E3%83%BC.html" class="a">不規則性エントロピー<a></b></td>
+             <td align="center"><a href="" class="a">彩音</a></td>
+        <td align="center">不規則性エントロピー</td>
+        <td>誰かの嘘がまた　誰かを傷つけ
+誰かの嘘がまた　誰かを護った
+歪んだ景色　やがて螺線へ　落ちる感覚
+痛みに震え　口かみ殺す<br>
+
+笑い合い　悲しみ分け合い
+掛け替えのない　特別な場面
+絆はずっと　ここに在るよね
+無自覚に　打ち鳴らす鼓動
+明確な　命の証明　落ちる影(不意なる)
+うしろの正面───<br>
+
+天高く　描かれた　空の色は　蒼くて
+無限回　繰り返す　まるでそれは　箱庭
+幼き動機の共鳴　結ばれた糸先は
+狂気と惨劇の舞台へ　繋がってる<br>
+
+群がる価値観に　芽生えゆく不信
+視線は宙を舞い　狂気に囚われ
+
+正しい事や　人の痛みさえも　いとわない
+異形文脈　かなり重症<br>
+
+命さえ　行方も分からぬ
+忌まわしき　小さなこの世界で
+絆はずっと　離れたくない
+君のその　真っ直ぐな瞳
+変えられる　新しい明日　理想並べ(不安を)
+かき消したいだけ───<br>
+
+真実を知らぬまま　沢山の想い出と
+風強く　吹きつける　大いなる海へ出る
+幼き動機の共鳴　結ばれた糸先は
+狂気と惨劇の舞台へ　繋がってる<br>
+
+天高く　描かれた　空の色は　蒼くて
+無限回　繰り返す　まるでそれは　箱庭
+幼き動機の共鳴　結ばれた糸先は<br>
+狂気と惨劇の舞台へ　繋がってる<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E4%B8%8D%E8%A6%8F%E5%89%87%E6%80%A7%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AD%E3%83%94%E3%83%BC.html" class="a"><strong>(查看更多)</a></td>
+      <tr/>
+         <tr>
+        <td align="center"><b><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E8%8A%B1.html" class="a">花</a></b></td>
+        <td align="center"><b><a href="#" class="a">夏川りみ</a></b></td>
+        <td align="center">夏川里美台灣精選</td>
+        <td>川は流れて どこどこ行くの
+人も流れて どこどこ行くの
+そんな流れが つくころには
+花として 花として
+咲かせてあげたい<br>
+泣きなさい 笑いなさい
+いつの日か いつの日か
+花をさかそうよ
+涙ながれて どこどこ行くの
+愛もながれて どこどこ行くの
+そんなながれを このうちに
+花として 花として
+むかえてあげたい<br>
+泣きなさい 笑いなさい
+いつの日か いつの日か
+花をさかそうよ
+花は花として わらいもできる
+人は人として 涙もながす<br>
+それが自然のうたなのさ
+心の中に 心の中に
+花を咲かそうよ
+泣きなさい 笑いなさい
+いついつまでも いついつまでも<br>
+花をつかもうよ
+泣きなさい 笑いなさい
+いついつまでも いついつまでも
+花をつかもうよ
+泣きなさい 笑いなさい<br>
+いついつまでも いついつまでも
+花をつかもうよ<a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E8%8A%B1.html" class="a">(查看更多)</a></td>
+      <tr/>
+		</tbody>
+	</table>
+
+</section>
+    </div>
+<hr>
+  
+</body>
+</html>

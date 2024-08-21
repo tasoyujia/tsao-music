@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>搜尋</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+.wet{
+  background: #FCFCFC;
+}
+.save{
+  
+    text-align: right;
+    font-size: 20px;
+    padding-right:20px;
+}
+.online{
+   font-size: 20px;
+}
+.online a{
+   text-decoration: none;
+}		
+.container{
+  margin:0 auto;
+  background:;
+}
+.back img{
+  height: 300px;
+  width: 2000px;
+}
+.title{
+  font-size:40px;
+}
+.s{
+  padding-left:20px;
+
+}
+.light-table-filter{
+  height:35px;
+  width:675px;
+  margin-bottom:20px;
+}
+.button{
+  text-align:right;
+  font-size:20px;
+  padding-right:20px;
+  
+}
+.button a{
+   text-decoration:none;
+  font-size:20px;
+  color:red;
+}
+.btn{
+  
+  line-height:;
+}
+.menu{
+  width:1100px;
+  margin:0 auto;
+  display:flex;
+  margin-bottom:20px;
+ }
+.menu li{
+  display:block;
+  width:220px;
+  text-align:center;
+  border:1px black solid;
+ background:#E8FFF5;
+ border-radius: 10px 10px 10px 10px;
+
+}
+.menu li a{
+  display:block;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-decoration:none;
+  color:black;
+}
+.menu li :hover{
+  background:#01005988;
+  border-radius: 10px 10px 10px 10px;
+  color:white;
+}
+.a{
+    text-decoration:none;
+}
+.b{
+  background:#00ffff;
+}
+.tr b  m :hover{
+  background:#01005988;
+  color:white;
+}
+
+.footer{
+  background:#696969;
+  color:#E6E6FA;
+  padding:25px;
+}
+.search{
+  text-decoration: none;
+}
+
+	</style>
+<script type="text/javascript">
+  (function(document) {
+  'use strict';
+
+  var LightTableFilter = (function(Arr) {
+
+    var _input;
+
+    function _onInputEvent(e) {
+      _input = e.target;
+      var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+      Arr.forEach.call(tables, function(table) {
+        Arr.forEach.call(table.tBodies, function(tbody) {
+          Arr.forEach.call(tbody.rows, _filter);
+        });
+      });
+    }
+
+    function _filter(row) {
+      var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+      row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+    }
+
+    return {
+      init: function() {
+        var inputs = document.getElementsByClassName('light-table-filter');
+        Arr.forEach.call(inputs, function(input) {
+          input.oninput = _onInputEvent;
+        });
+      }
+    };
+  })(Array.prototype);
+
+  document.addEventListener('readystatechange', function() {
+    if (document.readyState === 'complete') {
+      LightTableFilter.init();
+    }
+  });
+
+})(document);
+
+</script>
+
+</head>
+<body class="wet">
+<section class="container" >
+   <div class="back"><img src="img/316285.jpg"></div>
+
+  <p class="button"><strong><a href="#">登錄/註冊</a></strong></p>
+   <p class="save"><strong>❤收藏</strong></p>
+  <p class="online"><strong><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E9%A6%96%E9%A0%81.html">首頁</a>>搜尋</strong></p>
+
+ <strong> <ul class="menu">
+  <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E9%A6%96%E9%A0%81.html"><font size="6px">首頁</font></a></li>
+        <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E6%AD%8C%E6%9B%B2.html"><font size="6px">音樂分類</font></a></li>
+    
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91.html"><font size="6px">聯絡我們</font></a></li>
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E5%95%8F%E8%88%87%E7%AD%94.html"><font size="6px">問與答</font></a></li>
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E6%90%9C%E5%B0%8B.html"><font color="orange" size="6px">🔍 搜尋</font></a></li>
+  </ul></strong>
+
+    
+  <h class="s"><strong><font size="5px">搜尋:</strong></h><input type="search" class="light-table-filter" data-table="order-table" placeholder="找音樂" size="5px"> <button type="submit" class="btn btn-default">
+    <a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E6%90%9C%E5%B0%8B%E7%B5%90%E6%9E%9C.html" class="search"><font size="5px">搜尋</font></a></button> <strong>可搜尋歌曲、歌手、專輯、歌詞(中、英、日)</font>
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首頁</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+.wet{
+	background:	#FCFCFC;
+}
+/* .back{
+  /* background:; 
+} */
+.back img{
+	height: 300px;
+	width: 2000px;
+}
+.search{
+    text-align:right;
+  
+    font-size: 20px;
+}
+.search a{
+   text-decoration:none;
+}
+.save{
+	
+    text-align: right;
+    font-size: 20px;
+}
+.container{
+  margin:0 auto;
+  /* background:; */
+}
+.title{
+  font-size:40px;
+  color:	#4F4F4F;
+}
+
+.button{
+ text-align:right;
+ 
+  font-size:20px;
+  }
+.button a{
+   text-decoration:none;
+  font-size:20px;
+   color:red;
+}
+
+.menu{
+  width:1100px;
+  margin:0 auto;
+  display:flex;
+   margin-bottom:80px;
+
+ }
+.menu li{
+  display:block;
+  width:220px;
+  text-align:center;
+  border:1px black solid;
+  border-radius: 10px 10px 10px 10px;
+  background:		#E8FFF5;
+   font-size: 15px;
+}
+.menu li a{
+  display:block;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-decoration:none;
+  color:	#4F4F4F;
+ 
+}
+
+.menu li :hover{
+  background:#01005988;
+  border-radius: 10px 10px 10px 10px;
+  color:white;
+}
+/* .box1{
+  width:700px;
+  height:300px;
+  background:black;
+  float:right;
+    margin-bottom:80px;
+
+} */
+
+.new{
+  font-size:40px;
+  color:	#4F4F4F;
+}
+.box1 p a{
+  font-size:20px;
+   text-decoration:none;
+}
+.box2 p a{
+  font-size:20px;
+   text-decoration:none;
+}
+.box3 p a{
+  font-size:20px;
+   text-decoration:none;
+}
+.box4 p a{
+  font-size:20px;
+   text-decoration:none;
+}
+
+.link a{
+   text-decoration:none; 
+}
+
+.footer{
+  background:#696969;
+  color:#E6E6FA;
+  padding:25px;
+}
+.s{
+  padding-left:20px;
+}
+.light-table-filter{
+  height:25px;
+  width:675px;
+  margin-bottom:20px;
+}
+.search{
+  text-decoration: none;
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.clear:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wrap {
+    font-family: Arial;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.aside,
+.article,
+.section {
+    width: 393px;
+    padding:15px;
+    background-color:#80FFFF;
+     /* color:	#; */
+ }
+ 
+.aside,
+.article {
+    float: left;
+    margin-right: 10px;
+}
+
+.section {
+    float: right;
+}
+
+
+
+.bob-container{
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bob-row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.bob-row:before,.bob-row:after{
+  display: table;
+  content: " ";  
+}
+
+.bob-row:after{
+  clear: both;
+}
+
+/*2個並排 不管在任何尺寸都會2個並排*/
+.bob-2item{
+  width:50%;
+}
+
+/*3個並排 在767px以下會垂直排列*/
+.bob-3item{
+  width: 100%;
+}
+/*4個並排 在767px以下會2個排列*/
+.bob-4item{
+  width:25%;
+}
+
+.bob-2item,.bob-3item,.bob-4item{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float:left;
+}
+
+.bob-2item img,.bob-3item img,.bob-4item img{
+  width:95%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .bob-container {
+    width: 750px;
+  }
+  .bob-3item{
+    width: 33.33333333%;
+  }
+  .bob-4item{
+    width:16.6666%;
+  }
+}
+@media (min-width: 992px) {
+  .bob-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .bob-container {
+    width: 1170px;
+  }
+}
+/* 以下是輪播牆的CSS */
+* {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .carousel {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+       
+      }
+      .carousel-item img{
+         border-radius: 15px 15px 15px 15px;
+      }
+
+      .carousel img {
+        width: 100%;
+        height: auto;
+        height: 300px;
+      }
+
+      .carousel-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+	</style>
+</head>
+<body class="wet">
+  
+<section class="container" >
+
+
+  <div class="back"><img src="img/316285.jpg" style="display:block; margin:auto;"></div>
+
+
+<script>
+  let currentIndex = 0;
+  const totalSlides = document.querySelectorAll(".carousel-item").length;
+
+  function showSlide(index) {
+    const carouselContainer = document.querySelector(".carousel-container");
+    const slideWidth = document.querySelector(".carousel-item").offsetWidth;
+
+    if (index >= totalSlides) {
+      currentIndex = 0;
+    } else if (index < 0) {
+      currentIndex = totalSlides - 1;
+    } else {
+      currentIndex = index;
+    }
+
+    const transformValue = -currentIndex * slideWidth;
+    carouselContainer.style.transform = `translateX(${transformValue}px)`;
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+</script>
+<!-- 輪播牆END -->
+  <p class="button"><strong><a href="#">登錄/註冊</a></strong></p>
+  <p class="save"><strong>❤收藏</strong></p>
+
+
+  <h1 class="title" style="text-align: center;"><strong><span face="#">TSAO音樂網</span></strong></h1>
+
+<strong><ul class="menu">
+	<li><a href="#"><span style="color: orange; font-size: 30px;">首頁</span></a></li>
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E6%AD%8C%E6%9B%B2.html"><font size="6px">音樂分類</font></a></li>
+       <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91.html"><font size="6px">聯絡我們</font></a></li>
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E5%95%8F%E8%88%87%E7%AD%94.html"><font size="6px">問與答</font></a></li>
+    <li><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/1.%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E6%90%9C%E5%B0%8B.html"><font  size="6px">🔍 搜尋</font></a></li>
+  
+      </ul>
+      </section>
+</div>
+<hr>
+<p class="new" style="text-align: center;">熱門歌曲</p>
+<div class="wrap">  
+        
+        <main class="clear">
+            <div class="aside" ><p><span style="font-size: 23px;">民謠</span></p><br><span style="font-size: 23px;"><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E6%9B%B9%E7%A5%90%E5%98%89%E4%BD%9C%E5%93%81%E9%9B%86/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99%20%20%E3%80%90TSAO%E9%9F%B3%E6%A8%82%E7%B6%B2%E3%80%91/%E9%9B%A8%E5%A4%9C%E8%8A%B1.html" style="text-decoration:none;" ><font color="	black">1.雨夜花</font></a></span>  歌手:鄧麗君<br><font size="5px">2.花雨夜</font>  歌手:張清芳<br><font size="5px">3.冷雨夜</font>  歌手:Beyond
+            <br><span style="font-size: 23px;">4.三步珠淚</span> 歌手:鳳飛飛<br><span style="font-size: 23px;">5.往事難忘</span> 歌手:趙薇<br><font size="5px">6.安平追想曲</font> 歌手:鄧麗君<br><font size="5px">7.望春風</font>  歌手:鄧雨賢<br><font size="5px">8.農村曲</font>  歌手:台羅<br><font size="5px">9.白牡丹</font>  歌手:鳳飛飛
+            <br><span style="font-size: 23px;">10.補破網</span>  歌手:陳淑樺 </div>
+
+            <div class="article"><p><span style="font-size: 23px;">搖滾</span></p><br><span style="font-size: 23px;">1.It's My Life</span></a></font> 歌手:Bon Jovi (邦喬飛)<br><font size="5px">2.Say It Isn't So</font> 歌手:Bon Jovi (邦喬飛)<br><font size="5px">3.山海</font> 歌手:草東沒有派對
+            <br><span style="font-size: 23px;">4.加州旅館
+            </span> 歌手:老鷹<br><span style="font-size: 23px;">5.OK啦</span> 歌手:五月天<br><fspan style="font-size: 23px;">6.這款自作多情
+            </fspan> 歌手:茄子蛋<br><span style="font-size: 23px;">7.Brown Eyed Girl
+            </span>歌手:范·莫里森<br><span style="font-size: 23px;">8.滿天繁星
+            </span>歌手:酷玩樂團<br><span style="font-size: 23px;">9.九月結束時叫醒我
+            </span>歌手:年輕歲月
+            <br><span style="font-size: 23px;">10.Twenty Five, Twenty One
+            </span>歌手:紫雨林 </div>
+            <div class="section"><p><span style="font-size: 23px;">爵士</span></p><br><span style="font-size: 23px;">1.不愛我就請走開</span></a></font> 歌手:黛安娜．克瑞兒<br><font size="5px">2.她想知道</font> 歌手:Laura Fygi<br><font size="5px">3.雨中的九月</font> 歌手:Dinah Washington
+            <br><span style="font-size: 23px;">4.頰對頰</span> 歌手:艾拉．阿姆斯壯<br><span style="font-size: 23px;">5.路易斯安納週日午後</span> 歌手:黛安．索爾<br><font size="5px">6.期待有人眷顧我</font> 歌手:莎拉．沃恩<br><font size="5px">7.我心迷惘</font>歌手:艾拉．費茲潔羅<br><font size="5px">8.我們戀愛吧</font>歌手:黛安娜．克瑞兒<br><font size="5px">9.柳樹為我泣</font>歌手:蘿拉．費琪
+            <br><span style="font-size: 23px;">10.補嶄新的一天</span>歌手:黛娜．華盛頓 </div>
+        </main>
+        <p style="text-align: right;" class="link"><a href="#">查看更多➜</a></p>
+           
+        <hr>
+        <p class="new" style="text-align: center;">熱門專輯</p>
+        <!-- 4個並排 -->
+        <div class="bob-container"> 
+          <div class="bob-row">
+            <div class="bob-4item">
+              <img src="img/鄧麗君金曲選Vol.11.png">
+              <div style="height:43px; text-align: center;">鄧麗君金曲選Vol.11</div>
+            </div>
+            <div class="bob-4item">
+              <img src="img/鳳飛飛 金賞輯8.png">
+              <div style="height:43px; text-align: center;">鳳飛飛 金賞輯8</div>
+            </div>
+            <div class="bob-4item">
+              <img src="img/Crush.png">
+              <div style="height:43px; text-align: center;">Crush</div>
+            </div>
+            <div class="bob-4item">
+              <img src="img/人生海海.png">
+              <div style="height:43px; text-align: center;">人生海海</div>
+            </div>
+            <div class="bob-4item">
+              <img src="img/Sheet.png">
+              <div style="height:43px; text-align: center;">T.B.Sheet</div>
+            </div>
+            <div class="bob-4item">
+              <img src="img/Miracle Of Science.png">
+              <div style="height:43px; text-align: center;">Miracle Of Science</div>
+            </div>
+          </div>
+          <p style="text-align: right;"><a href="#" style="text-decoration:none;">查看更多➜</a></p>
+        </div>
+        
+
+       <hr>
+       <p class="new" style="text-align: center;">熱門歌手</p>
+       <!-- 4個並排 -->
+       <div class="bob-container"> 
+        <div class="bob-row">
+          <div class="bob-4item">
+            <img src="img/鄧麗君(3).png">
+            <div style="height:43px; text-align: center;">鄧麗君</div>
+          </div>
+          <div class="bob-4item">
+            <img src="img/五月天(2).png">
+            <div style="height:43px; text-align: center;">五月天</div>
+          </div>
+          <div class="bob-4item">
+            <img src="img/張清芳(2).png">
+            <div style="height:43px; text-align: center;">張清芳</div>
+          </div>
+          <div class="bob-4item">
+            <img src="img/鳳飛飛(2).png">
+            <div style="height:43px; text-align: center;">鳳飛飛</div>
+          </div>
+          <div class="bob-4item">
+            <img src="img/Bon Jovi(2).png">
+            <div style="height:43px; text-align: center;">Bon Jovi</div>
+          </div>
+          <div class="bob-4item">
+            <img src="img/Diana Krall(2).png">
+            <div style="height:43px; text-align: center;">Diana Krall</div>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+  <p style="text-align: right;"><a href="#" style="text-decoration:none;">查看更多➜</a></p>
+</div>
+
+<hr>
+<p class="new" style="text-align: center;">最新消息</p>
+  <div class="box1"><p><a href="#">陳明章、鍾永豐攜手打造《關渡之歌》！最在地的「鬧熱關渡節」10/30熱鬧登場---2021-11-01</a>
+</p></div>
+<div class="box2"><p><a href="#">【今天換我推】SOU・SOU 中文小編團隊平常都聽什麼歌？出乎意料的搖滾魂與迷妹魂！---2021-10-31</a>
+</p></div>
+<div class="box3"><p><a href="#">這 7 首歌唱出 Netflix《比悲傷更悲傷的故事》影集版的揪心虐戀---2021-10-29</a></p>
+</div>
+<div class="box4"><p><a href="#">【專訪】Yogee New Waves 「把風寫成歌詞化為旋律，這張專輯『通風良好』」---2021-10-28</a>
+</p></div>
+  <p style="text-align: right;" class="link"><a href="file:///C:/Users/%E6%9B%B9%E7%A5%90%E5%98%89/OneDrive/%E6%A1%8C%E9%9D%A2/%E8%87%AA%E8%A3%BD%E9%9F%B3%E6%A8%82%E7%B6%B2%E7%AB%99/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF.html">查看更多➜</a></p>
+
+
+
+</body>
+</html>
